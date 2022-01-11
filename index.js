@@ -19,7 +19,10 @@ Do the following:
 
    HINT: no function required
 */
-
+const votingAge = 18;
+if (votingAge >= 18) {
+console.log(true);
+}
 
 
 /*
@@ -32,6 +35,13 @@ Do the following:
 
    HINT: no function required
 */
+
+let cost = 1;
+let weight = 2;
+if (weight >= 1) {
+  let cost = 100;
+  console.log(cost);
+}
 
 
 
@@ -47,7 +57,8 @@ Do the following:
 
    HINT: look up the Number method
 */
-
+let goodYear = '1999';
+console.log(Number(goodYear));
 
 
 
