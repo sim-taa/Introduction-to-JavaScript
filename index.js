@@ -87,10 +87,11 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(humanAge){
+  return humanAge * 7;
 }
 
+console.log(dogYears(31));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -120,10 +121,30 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(dogAge,pupWeight){
+  if (dogAge >= 1); {
+    if (pupWeight <= 5){
+      return pupWeight * .05;
+    } else if (pupWeight > 6 && pupWeight < 10) {
+      return pupWeight * .04; }
+    else if (pupWeight > 10 && pupWeight < 15) { 
+      return pupWeight * .03;
+   } else { 
+      return pupWeight * .02;
+  }
+  if (dogAge < 1) {
+    if (dogAge >= 2/12 && dogAge < 4/12) {
+      return pupWeight * .1; 
+   } else if (dogAge >= 4/12 && dogAge < 7/12) {
+       return pupWeight * .05; }
+     else if (dogAge >= 7/12 && dogAge < 12/12) {
+       return pupWeight * .04;
+     }
+   }
+     
+  }
 }
-
+console.log(hungryDog(12,130))
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -151,6 +172,31 @@ HINT: Remember that the order in which we pass in our arguments matters when it 
 
 function game(user, computer){
   /*add your code here*/
+  if (user === computer) {
+    return "it's a tie";
+  }
+  else if (user === 'scissors') {
+    if (computer === 'paper') {
+      return "you win!";
+    } else if (user === 'paper') {
+      if (computer === 'rock') {
+        return "you win!";
+    } else if (computer === 'scissors') 
+        return "you lose!";
+    }
+  } else if (user === 'rock') {
+    if (computer === 'scissors') {
+      return "you win!";
+  } else if (computer === 'paper') {
+      return "you lose!";
+  }
+} else if (user === 'paper') {
+  if (computer === 'rock') {
+    return "you win!";
+} else if (computer === 'scissors') {
+    return "you lose!";
+}
+  }
 }
 
 
