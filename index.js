@@ -121,24 +121,24 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(pupWeight,dogAge){
-  if (dogAge >= 1) {
-    if (pupWeight <= 5){
-      return pupWeight * .05;
-    } else if (pupWeight > 6 && pupWeight < 10) {
-      return pupWeight * .04; }
-    else if (pupWeight > 10 && pupWeight < 15) { 
-      return pupWeight * .03;
+function hungryDog(weight,age){
+  if (age >= 1) {
+    if (weight <= 5){
+      return weight * .05;
+    } else if (weight > 6 && weight < 10) {
+      return weight * .04; 
+    } else if (weight > 10 && weight < 15) { 
+      return weight * .03;
    } else { 
-      return pupWeight * .02;
+      return weight * .02;
   } 
-  } else if (dogAge < 1) {
-    if (dogAge >= 2/12 && dogAge < 4/12) {
-      return pupWeight * .1; 
-   } else if (dogAge >= 4/12 && dogAge < 7/12) {
-       return pupWeight * .05; }
-     else if (dogAge >= 7/12 && dogAge <= 12/12) {
-       return pupWeight * .04;
+  } else if (age < 1) {
+    if (age >= 2/12 && age < 4/12) {
+      return weight * .1; 
+   } else if (age >= 4/12 && age < .583) {
+       return weight * .05; }
+     else if (age >= .583 && age < 12/12) {
+       return weight * .04;
      }
    }
 }
@@ -271,7 +271,7 @@ if (score >= 90) {
   return 'you got a D'
 } else 
   return 'you got an F'
-  
+
 }
 
 
